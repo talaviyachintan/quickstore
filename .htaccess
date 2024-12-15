@@ -7,7 +7,7 @@ Options +FollowSymlinks
 
     # Redirect from non-www to www
     RewriteCond %{HTTP_HOST} !^www\.
-    RewriteRule ^(.*)$ https://www.talaviyachintan-ecommerce.com/$1 [L,R=301]
+    RewriteRule ^(.*)$ https://https://talaviyachintan.github.io/quickstore/$1 [L,R=301]
 
     # Rewriting simple URLs to PHP files
     RewriteRule ^about$  inc-about.php [L]
