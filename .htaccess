@@ -7,19 +7,19 @@ Options +FollowSymlinks
 
     # Redirect from non-www to www
     RewriteCond %{HTTP_HOST} !^www\.
-    RewriteRule ^(.*)$ https://https://talaviyachintan.github.io/quickstore/$1 [L,R=301]
+    RewriteRule ^(.*)$ https://talaviyachintan.github.io/quickstore/$1 [L,R=301]
 
     # Rewriting simple URLs to PHP files
-    RewriteRule ^about$  inc-about.php [L]
-    RewriteRule ^account$  inc-account.php [L]
-    RewriteRule ^blog$  inc-blog.php [L]
-    RewriteRule ^cart$  inc-cart.php [L]
-    RewriteRule ^checkout$  inc-checkout.php [L]
-    RewriteRule ^contact$  inc-contact.php [L]
-    RewriteRule ^gellery$  inc-gellery.php [L]
-    RewriteRule ^product$  inc-product.php [L]
-    RewriteRule ^shop$  inc-shop.php [L]
-    RewriteRule ^wishlist$  inc-wishlist.php [L]
+    RewriteRule ^about$ /ecommerce-site/inc-about.php [L]
+    RewriteRule ^account$ /ecommerce-site/inc-account.php [L]
+    RewriteRule ^blog$ /ecommerce-site/inc-blog.php [L]
+    RewriteRule ^cart$ /ecommerce-site/inc-cart.php [L]
+    RewriteRule ^checkout$ /ecommerce-site/inc-checkout.php [L]
+    RewriteRule ^contact$ /ecommerce-site/inc-contact.php [L]
+    RewriteRule ^gellery$ /ecommerce-site/inc-gellery.php [L]
+    RewriteRule ^product$ /ecommerce-site/inc-product.php [L]
+    RewriteRule ^shop$ /ecommerce-site/inc-shop.php [L]
+    RewriteRule ^wishlist$ /ecommerce-site/inc-wishlist.php [L]
 </IfModule>
 
 # END
