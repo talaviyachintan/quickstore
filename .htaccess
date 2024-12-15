@@ -1,0 +1,25 @@
+Options +FollowSymlinks
+
+# BEGIN
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /ecommerce-site/
+
+    # Redirect from non-www to www
+    RewriteCond %{HTTP_HOST} !^www\.
+    RewriteRule ^(.*)$ https://www.talaviyachintan-ecommerce.com/$1 [L,R=301]
+
+    # Rewriting simple URLs to PHP files
+    RewriteRule ^about$  inc-about.php [L]
+    RewriteRule ^account$  inc-account.php [L]
+    RewriteRule ^blog$  inc-blog.php [L]
+    RewriteRule ^cart$  inc-cart.php [L]
+    RewriteRule ^checkout$  inc-checkout.php [L]
+    RewriteRule ^contact$  inc-contact.php [L]
+    RewriteRule ^gellery$  inc-gellery.php [L]
+    RewriteRule ^product$  inc-product.php [L]
+    RewriteRule ^shop$  inc-shop.php [L]
+    RewriteRule ^wishlist$  inc-wishlist.php [L]
+</IfModule>
+
+# END
